@@ -1,13 +1,6 @@
-// let msg: string = 'Hello world';
+// self-invoking anonymous function
+(() => {
 
-// const hero = {
-//     name: 'Ironman',
-//     age: 45
-// }
-
-// // hero.age = '50';
-
-// console.log(msg, hero.age);
-
-const a: number = 10;
-console.log(a);
+    const a: number = 10;
+    console.log(a);
+})();
