@@ -22,6 +22,11 @@
         console.log(ironman, theRest);
     }
 
-    printAvenger(avengers);
+    // printAvenger(avengers);
 
+    // const avengersArray: string[] = ['Captain America', 'Ironman', 'Hulk'];
+    const avengersArray: [string, boolean, number] = ['Captain America', true, 1234];
+    // const ironman = avengersArray[1];
+    const [captain, ironman,] = avengersArray;
+    console.log({ ironman, captain });
 })()
