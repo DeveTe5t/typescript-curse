@@ -1,6 +1,6 @@
 (() => {
 
-    const name: string = 'Fulano';
+    const name: string = 'Fulano for which';
 
     // const getName = function () { }
 
