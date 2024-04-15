@@ -5,7 +5,7 @@
             public name: string,
             public realName: string,
         ) {
-            console.log('Constructor Avenger called!');
+            // console.log('Constructor Avenger called!');
         }
 
         protected getFullName() {
@@ -20,7 +20,7 @@
             public isMutant: boolean,
         ) {
             super(name, realName);
-            console.log('Constructor Xmen called!');
+            // console.log('Constructor Xmen called!');
         }
 
         get fullName() {

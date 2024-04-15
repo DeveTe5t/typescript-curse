@@ -21,8 +21,6 @@
     const printName = (character) => {
         console.log(character.realName);
     };
-    printName(wolverine);
-    printName(magneto);
 })();
 (() => {
     class Avenger {
@@ -45,7 +43,6 @@
         constructor(name, realName) {
             this.name = name;
             this.realName = realName;
-            console.log('Constructor Avenger called!');
         }
         getFullName() {
             return `${this.name} ${this.realName}`;
@@ -55,7 +52,6 @@
         constructor(name, realName, isMutant) {
             super(name, realName);
             this.isMutant = isMutant;
-            console.log('Constructor Xmen called!');
         }
         get fullName() {
             return `${this.name} - ${this.realName}`;
@@ -71,5 +67,26 @@
         }
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
+})();
+(() => {
+    class Apocalypse {
+        constructor(name) {
+            this.name = name;
+        }
+        static callApocalypse() {
+            if (!Apocalypse.instance) {
+                Apocalypse.instance = new Apocalypse('I am Apocalypse1... the only one');
+            }
+            return Apocalypse.instance;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    const apocalypse1 = Apocalypse.callApocalypse();
+    const apocalypse2 = Apocalypse.callApocalypse();
+    const apocalypse3 = Apocalypse.callApocalypse();
+    apocalypse1.changeName('Xavier');
+    console.log(apocalypse1, apocalypse2, apocalypse3);
 })();
 //# sourceMappingURL=main.js.map
