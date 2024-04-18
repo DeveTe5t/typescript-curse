@@ -1,6 +1,10 @@
-# Basic TypeScript Curse
+# Basic TypeScript Course part 1
 
 Oprional, steps to be listening for changes in the project:
 
-1.  tsc --watch or tsc -w
+* You need to run the command:
 
+```tsc --watch``` or ```tsc -w```
+
+# typescript-course
+Typescript
