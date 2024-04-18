@@ -4,11 +4,15 @@ Oprional, steps to be listening for changes in the project:
 
 * You need to run the command:
 
-```tsc --watch``` 
+```
+tsc --watch
+``` 
 
-or 
+or short version
 
-```tsc -w```
+```
+tsc -w
+```
 
 # typescript-course
 Typescript
